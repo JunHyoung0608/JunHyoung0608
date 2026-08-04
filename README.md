@@ -2,8 +2,8 @@
 
 <div align="center">
 
-**System Semiconductor Engineering | Hardware Design & UVM Verification**
-*Constantly exploring RISC-V Architecture, FPGA Flows, and Advanced Verification methodologies.*
+**시스템 반도체 엔지니어 | 하드웨어 설계 및 UVM 검증**
+*RISC-V 아키텍처, FPGA 플로우, 그리고 최신 검증 방법론을 끊임없이 탐구합니다.*
 
 </div>
 
@@ -23,40 +23,40 @@
 
 | Category | Tools & Platforms | Description |
 | :--- | :--- | :--- |
-| **Verification** | `UVM`, `VCS`, `Verdi` | UVM Testbench Architecture, SVA, FSDB Debugging & Coverage |
-| **Simulation** | `ModelSim`, `Vivado Simulator` | RTL Simulation & Functional Verification |
-| **FPGA Flow** | `Vivado`, `Quartus` | Synthesis, Timing Closure & Bitstream Generation |
-| **Hardware** | `Basys3 (Artix-7)`, `Jetson Orin Nano` | Physical Board Targeting & Hardware Debugging |
+| **Verification** | `UVM`, `VCS`, `Verdi` | UVM Testbench 아키텍처 구성, SVA, FSDB 디버깅 및 커버리지 분석 |
+| **Simulation** | `ModelSim`, `Vivado Simulator` | RTL 시뮬레이션 및 기능 검증 |
+| **FPGA Flow** | `Vivado`, `Quartus` | 합성(Synthesis), 타이밍 클로저 및 비트스트림 생성 |
+| **Hardware** | `Basys3 (Artix-7)`, `Jetson Orin Nano` | 타겟 보드 포팅 및 하드웨어 디버깅 |
 
 ---
 
 ## 🚀 Featured Projects
 
-### 🔍 System-on-Chip (SoC) & Verification
-* **SoC AXI Peripheral (SPI & I2C) Design & UVM Verification**[cite: 5]
-  * Designed AXI4 Lite-based SPI/I2C Master hardware modules for MicroBlaze and established the HW-to-SW (HAL, Driver, Application) hierarchy.[cite: 5]
-  * Constructed a robust UVM environment (Driver, Monitor, Scoreboard) to verify AXI Handshake processes and zero-error data transmission.[cite: 5]
-  * **Troubleshooting:** Resolved a critical software polling issue caused by a 1-tick 'Done' signal by implementing a hardware 'Done Flag Logic' register for stable SW-HW synchronization.[cite: 5]
-* **RISC-V (RV32I) MCU System Design**
-  * Integrated APB Bus and designed a core processor architecture.
-  * Implemented an optimized Datapath and Controller for the R-type instruction set.
-* **UVM-Based Verification Environment**
-  * Built comprehensive verification environments (Driver, Monitor, Scoreboard) for APB RAM and UART Controllers.
+### 🔍 System-on-Chip (SoC) 및 검증
+* **SoC AXI Peripheral (SPI & I2C) 설계 및 UVM 검증**[cite: 5]
+  * MicroBlaze용 AXI4 Lite 기반 SPI/I2C Master 하드웨어 모듈을 설계하고, HW-HAL-Driver-Application으로 이어지는 소프트웨어 계층 구조 구축.[cite: 5]
+  * UVM 통합 검증 환경(Driver, Monitor, Scoreboard)을 구성하여 AXI 핸드셰이크 과정과 데이터 송수신(Error 0)의 무결성 검증.[cite: 5]
+  * **Troubleshooting:** 1-tick 동안만 유지되는 'Done' 신호로 인해 SW 폴링이 불가능했던 문제를 하드웨어 내부에 'Done Flag Logic' 레지스터를 추가하는 방식으로 해결하여 안정적인 SW-HW 동기화 구현.[cite: 5]
+* **RISC-V (RV32I) MCU 시스템 설계**
+  * APB 버스 통합 및 핵심 코어 프로세서 아키텍처 설계
+  * R-type 명령어 체계에 최적화된 데이터패스(Datapath) 및 컨트롤러 구현
+* **UVM 기반 통합 검증 환경 구축**
+  * APB RAM 및 UART 컨트롤러를 위한 검증 환경(Driver, Monitor, Scoreboard) 구축
 
-### 📟 FPGA & Hardware Design
-* **On-Device FPGA Integration Control System**[cite: 3]
-  * Designed an integrated system on Basys3 (Artix-7) to manage a digital clock, stopwatch, and sensors (HCSR04, DHT11) via physical buttons and UART.[cite: 3]
-  * Developed the `AsciiSender` FSM, a synchronous circular `TX_FIFO`, and a `TX_ARBITER` to handle payload-to-ASCII conversion and transmission prioritization.[cite: 3]
-* **Hardware-Based Retro Games (Basys3)**
-  * Engineered logic for Chrome Dino (rendering left-moving obstacles) and Tetris using Verilog.
-  * Implemented custom VGA and UART display drivers.
+### 📟 FPGA 및 하드웨어 설계
+* **FPGA 기반 On-Device 통합 제어 시스템**[cite: 3]
+  * Basys3(Artix-7)를 활용하여 디지털 시계, 스톱워치 및 센서(HCSR04, DHT11)를 물리 버튼과 UART로 제어하는 하드웨어 시스템 설계.[cite: 3]
+  * 페이로드를 ASCII로 변환해 전송하는 `AsciiSender` FSM, 동기식 원형 `TX_FIFO`, 그리고 송신 우선순위를 제어하는 `TX_ARBITER` 설계 및 검증.[cite: 3]
+* **하드웨어 기반 레트로 게임 (Basys3)**
+  * Verilog를 활용한 크롬 공룡 게임(좌측으로 이동하는 장애물 렌더링) 및 테트리스 로직 설계
+  * VGA 및 UART 디스플레이 커스텀 드라이버 구현
 
-### 🤖 On-Device AI & Computer Vision
-* **AI Driver Monitoring System (KCCI On-Device AI)**[cite: 4]
-  * Developed a drowsiness detection system on Jetson Orin Nano featuring local LLM (Ollama) and STT/TTS for customized voice warnings.[cite: 4]
-  * Implemented head tilt calculation logic using YOLO Pose and seamlessly integrated Vision, Audio, and LLM pipelines into a unified background/foreground process.[cite: 4]
-* **2024 Capstone Design: AI Braille System**
-  * Designed a braille recognition and voice output program for the visually impaired using YOLOv5.
+### 🤖 On-Device AI 및 컴퓨터 비전
+* **AI 운전자 모니터링 시스템 (KCCI On-Device AI)**[cite: 4]
+  * Jetson Orin Nano 기반으로 로컬 LLM(Ollama)과 STT/TTS를 연동해 상황 맞춤형 음성 경고를 제공하는 졸음 감지 시스템 개발.[cite: 4]
+  * YOLO Pose를 활용한 머리 기울기 계산 로직을 구현하고, 비전, 오디오, LLM 파이프라인을 백그라운드/포그라운드 프로세스로 완벽하게 통합.[cite: 4]
+* **2024 캡스톤 디자인: AI 점자 시스템**
+  * YOLOv5를 활용한 시각장애인용 점자 인식 및 음성 출력 프로그램 설계
 
 ---
 
