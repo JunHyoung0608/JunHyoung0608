@@ -34,11 +34,11 @@
 
 | 프로젝트명 | 분야 (Category) | 주요 기술 및 내용 | 핵심 성과 / 트러블슈팅 |
 | :--- | :--- | :--- | :--- |
-| **[`AXI-Based-Soc-Design-and-UVM-Verification`](https://github.com/junbro0608/AXI-Based-Soc-Design-and-UVM-Verification)** | SoC / Verification | • MicroBlaze 기반 AXI4 Lite SPI/I2C Master 설계<br>• HW-HAL-Driver-Application SW 계층 구조 구축[cite: 5]<br>• UVM 검증 환경(Driver, Monitor, Scoreboard) 구축[cite: 5] | • AXI 핸드셰이크 및 데이터 송수신 무결성 검증 (Error 0)[cite: 5]<br>• 1-tick 'Done' 신호 폴링 누락 문제를 하드웨어 'Done Flag Logic' 추가로 해결[cite: 5] |
+| **[`AXI-Based-Soc-Design-and-UVM-Verification`](https://github.com/junbro0608/AXI-Based-Soc-Design-and-UVM-Verification)** | SoC / Verification | • MicroBlaze 기반 AXI4 Lite SPI/I2C Master 설계<br>• HW-HAL-Driver-Application SW 계층 구조 구축<br>• UVM 검증 환경(Driver, Monitor, Scoreboard) 구축 | • AXI 핸드셰이크 및 데이터 송수신 무결성 검증 (Error 0)<br>• 1-tick 'Done' 신호 폴링 누락 문제를 하드웨어 'Done Flag Logic' 추가로 해결 |
 | **[`MCU_Up_Down_Game`](https://github.com/junbro0608/MCU_Up_Down_Game)** | SoC / MCU | • RISC-V (RV32I) 아키텍처 기반 MCU 시스템 구조 설계<br>• APB 버스 통합 및 R-type 최적화 데이터패스/컨트롤러 구현 | • 하드웨어 프로세서 설계를 통한 실시간 Up/Down 게임 로직 구동 |
-| **[`VGA_CAM_Project`](https://github.com/junbro0608/VGA_CAM_Project)** | FPGA / Vision | • 6대 카메라 및 다중 FPGA(Basys3) 간 SPI/I2C 연동[cite: 1, 2]<br>• YCoCg 2:1 압축 및 핑퐁(Double Buffering) 메모리 제어[cite: 1, 2] | • 실시간 2x3 모자이크 영상 합성 및 12-bit 음계 검출 시스템 구현[cite: 1, 2] |
-| **[`Peripheral-Multiple-Control-System`](https://github.com/junbro0608/Peripheral-Multiple-Control-System)** | FPGA / Hardware | • Basys3(Artix-7) 활용 디지털 시계, 스톱워치, 센서 통합 제어[cite: 3]<br>• `AsciiSender` FSM, 동기식 원형 `TX_FIFO`, `TX_ARBITER` 설계[cite: 3] | • 물리 버튼 및 UART 인터페이스를 통한 페이로드 전송 및 우선순위 제어[cite: 3] |
-| **[`Monitor-drowsy-driving`](https://github.com/junbro0608/Monitor-drowsy-driving)** | On-Device AI | • Jetson Orin Nano 기반 로컬 LLM(Ollama) 및 STT/TTS 연동[cite: 4]<br>• YOLO Pose 머리 기울기 계산 및 눈 상태(EAR) 분석 로직 구현[cite: 4] | • 비전, 오디오, LLM 파이프라인 멀티프로세스 통합으로 실시간 졸음 감지 및 음성 경고 제공[cite: 4] |
+| **[`VGA_CAM_Project`](https://github.com/junbro0608/VGA_CAM_Project)** | FPGA / Vision | • 6대 카메라 및 다중 FPGA(Basys3) 간 SPI/I2C 연동<br>• YCoCg 2:1 압축 및 핑퐁(Double Buffering) 메모리 제어 | • 실시간 2x3 모자이크 영상 합성 및 12-bit 음계 검출 시스템 구현 |
+| **[`Peripheral-Multiple-Control-System`](https://github.com/junbro0608/Peripheral-Multiple-Control-System)** | FPGA / Hardware | • Basys3(Artix-7) 활용 디지털 시계, 스톱워치, 센서 통합 제어<br>• `AsciiSender` FSM, 동기식 원형 `TX_FIFO`, `TX_ARBITER` 설계 | • 물리 버튼 및 UART 인터페이스를 통한 페이로드 전송 및 우선순위 제어 |
+| **[`Monitor-drowsy-driving`](https://github.com/junbro0608/Monitor-drowsy-driving)** | On-Device AI | • Jetson Orin Nano 기반 로컬 LLM(Ollama) 및 STT/TTS 연동<br>• YOLO Pose 머리 기울기 계산 및 눈 상태(EAR) 분석 로직 구현 | • 비전, 오디오, LLM 파이프라인 멀티프로세스 통합으로 실시간 졸음 감지 및 음성 경고 제공 |
 | **[`Braille-reading-and-voice-output-programs-for-the-visually-impaired`](https://github.com/junbro0608/Braille-reading-and-voice-output-programs-for-the-visually-impaired)** | Computer Vision | • YOLOv5 활용 시각장애인용 실시간 점자 인식 알고리즘 구현<br>• 인식된 텍스트를 오디오로 변환하는 TTS 음성 출력 시스템 적용 | • 딥러닝 기반 객체 인식을 실생활 보조기기 프로그램으로 확장 |
 
 ---
