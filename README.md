@@ -26,22 +26,37 @@
 | **Verification** | `UVM`, `VCS`, `Verdi` | UVM Testbench Architecture, SVA, FSDB Debugging & Coverage |
 | **Simulation** | `ModelSim`, `Vivado Simulator` | RTL Simulation & Functional Verification |
 | **FPGA Flow** | `Vivado`, `Quartus` | Synthesis, Timing Closure & Bitstream Generation |
-| **Hardware** | `Basys3 (Artix-7)`, `DE-2` | Physical Board Targeting & Hardware Debugging |
+| **Hardware** | `Basys3 (Artix-7)`, `Jetson Orin Nano` | Physical Board Targeting & Hardware Debugging |
 
 ---
 
 ## 🚀 Featured Projects
 
+### 🔍 System-on-Chip (SoC) & Verification
+* **SoC AXI Peripheral (SPI & I2C) Design & UVM Verification**[cite: 5]
+  * Designed AXI4 Lite-based SPI/I2C Master hardware modules for MicroBlaze and established the HW-to-SW (HAL, Driver, Application) hierarchy.[cite: 5]
+  * Constructed a robust UVM environment (Driver, Monitor, Scoreboard) to verify AXI Handshake processes and zero-error data transmission.[cite: 5]
+  * **Troubleshooting:** Resolved a critical software polling issue caused by a 1-tick 'Done' signal by implementing a hardware 'Done Flag Logic' register for stable SW-HW synchronization.[cite: 5]
 * **RISC-V (RV32I) MCU System Design**
-  * APB Bus Integration 및 핵심 프로세서 설계
-  * R-type 명령어 체계에 최적화된 Datapath 및 컨트롤러 구현
+  * Integrated APB Bus and designed a core processor architecture.
+  * Implemented an optimized Datapath and Controller for the R-type instruction set.
 * **UVM-Based Verification Environment**
-  * APB RAM 및 UART Controller를 위한 검증 환경 구축 (Driver, Monitor, Scoreboard 구성)
+  * Built comprehensive verification environments (Driver, Monitor, Scoreboard) for APB RAM and UART Controllers.
+
+### 📟 FPGA & Hardware Design
+* **On-Device FPGA Integration Control System**[cite: 3]
+  * Designed an integrated system on Basys3 (Artix-7) to manage a digital clock, stopwatch, and sensors (HCSR04, DHT11) via physical buttons and UART.[cite: 3]
+  * Developed the `AsciiSender` FSM, a synchronous circular `TX_FIFO`, and a `TX_ARBITER` to handle payload-to-ASCII conversion and transmission prioritization.[cite: 3]
 * **Hardware-Based Retro Games (Basys3)**
-  * Verilog를 활용한 Chrome Dino 게임 로직(우측에서 좌측으로 이동하는 장애물 렌더링) 및 Tetris 설계
-  * VGA/UART 디스플레이 드라이버 구현
+  * Engineered logic for Chrome Dino (rendering left-moving obstacles) and Tetris using Verilog.
+  * Implemented custom VGA and UART display drivers.
+
+### 🤖 On-Device AI & Computer Vision
+* **AI Driver Monitoring System (KCCI On-Device AI)**[cite: 4]
+  * Developed a drowsiness detection system on Jetson Orin Nano featuring local LLM (Ollama) and STT/TTS for customized voice warnings.[cite: 4]
+  * Implemented head tilt calculation logic using YOLO Pose and seamlessly integrated Vision, Audio, and LLM pipelines into a unified background/foreground process.[cite: 4]
 * **2024 Capstone Design: AI Braille System**
-  * YOLOv5를 활용한 시각장애인용 점자 인식 및 음성 출력 프로그램 설계
+  * Designed a braille recognition and voice output program for the visually impaired using YOLOv5.
 
 ---
 
