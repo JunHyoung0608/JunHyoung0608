@@ -32,30 +32,14 @@
 
 ## 🚀 Featured Projects
 
-### 🔍 System-on-Chip (SoC) 및 검증
-* **`AXI-Based-Soc-Design-and-UVM-Verification`**[cite: 5]
-  * MicroBlaze용 AXI4 Lite 기반 SPI/I2C Master 하드웨어 모듈을 설계하고, HW-HAL-Driver-Application으로 이어지는 소프트웨어 계층 구조 구축[cite: 5]
-  * UVM 통합 검증 환경(Driver, Monitor, Scoreboard)을 구성하여 AXI 핸드셰이크 과정과 데이터 송수신(Error 0)의 무결성 검증[cite: 5]
-  * **Troubleshooting:** 1-tick 동안만 유지되는 'Done' 신호로 인해 SW 폴링이 불가능했던 문제를 하드웨어 내부에 'Done Flag Logic' 레지스터를 추가하는 방식으로 해결하여 안정적인 SW-HW 동기화 구현[cite: 5]
-* **`MCU_Up_Down_Game`**
-  * RISC-V (RV32I) 아키텍처 기반 MCU 시스템 구조 설계 및 APB 버스 통합
-  * 설계한 프로세서 데이터패스(Datapath) 및 컨트롤러를 바탕으로 하드웨어 수준에서 동작하는 Up/Down 게임 로직 구현
-
-### 📟 FPGA 및 하드웨어 설계
-* **`VGA_CAM_Project`** (브레멘 음악대 시스템)[cite: 1, 2]
-  * 6대의 카메라 영상과 6대의 다중 FPGA(Basys3)를 SPI 및 I2C 통신으로 연동한 실시간 비전(Vision) 인터랙티브 연주 시스템 설계[cite: 1, 2]
-  * YCoCg 2:1 영상 데이터 압축 전송과 핑퐁(Double Buffering) 기반 메모리 제어로 실시간 2x3 모자이크 영상 합성 및 12-bit 음계 검출 구현[cite: 1, 2]
-* **`Peripheral-Multiple-Control-System`**[cite: 3]
-  * Basys3(Artix-7)를 활용하여 디지털 시계, 스톱워치 및 센서(HCSR04, DHT11)를 물리 버튼과 UART로 통합 제어하는 하드웨어 설계[cite: 3]
-  * 페이로드를 ASCII로 변환해 전송하는 `AsciiSender` FSM, 동기식 원형 `TX_FIFO`, 그리고 송신 우선순위를 결정하는 `TX_ARBITER` 설계 및 검증[cite: 3]
-
-### 🤖 On-Device AI 및 컴퓨터 비전
-* **`Monitor-drowsy-driving`** (AI 운전자 모니터링 시스템)[cite: 4]
-  * Jetson Orin Nano를 기반으로 로컬 LLM(Ollama)과 STT/TTS를 연동해 상황 맞춤형 음성 경고를 제공하는 능동형 졸음 감지 시스템 개발[cite: 4]
-  * YOLO Pose를 활용한 머리 기울기 계산 및 눈 상태(EAR) 분석 로직을 구현하고, 비전, 오디오, LLM 파이프라인을 멀티프로세스로 완벽하게 통합[cite: 4]
-* **`Braille-reading-and-voice-output-programs-for-the-visually-impaired`**
-  * YOLOv5를 활용하여 시각장애인을 위한 실시간 점자 인식 알고리즘 구현
-  * 인식된 점자 텍스트를 오디오로 변환하여 알려주는 음성 출력 시스템(TTS) 설계 적용
+| 프로젝트명 | 분야 (Category) | 주요 기술 및 내용 | 핵심 성과 / 트러블슈팅 |
+| :--- | :--- | :--- | :--- |
+| **[`AXI-Based-Soc-Design-and-UVM-Verification`](https://github.com/junbro0608/AXI-Based-Soc-Design-and-UVM-Verification)** | SoC / Verification | • MicroBlaze 기반 AXI4 Lite SPI/I2C Master 설계<br>• HW-HAL-Driver-Application SW 계층 구조 구축[cite: 5]<br>• UVM 검증 환경(Driver, Monitor, Scoreboard) 구축[cite: 5] | • AXI 핸드셰이크 및 데이터 송수신 무결성 검증 (Error 0)[cite: 5]<br>• 1-tick 'Done' 신호 폴링 누락 문제를 하드웨어 'Done Flag Logic' 추가로 해결[cite: 5] |
+| **[`MCU_Up_Down_Game`](https://github.com/junbro0608/MCU_Up_Down_Game)** | SoC / MCU | • RISC-V (RV32I) 아키텍처 기반 MCU 시스템 구조 설계<br>• APB 버스 통합 및 R-type 최적화 데이터패스/컨트롤러 구현 | • 하드웨어 프로세서 설계를 통한 실시간 Up/Down 게임 로직 구동 |
+| **[`VGA_CAM_Project`](https://github.com/junbro0608/VGA_CAM_Project)** | FPGA / Vision | • 6대 카메라 및 다중 FPGA(Basys3) 간 SPI/I2C 연동[cite: 1, 2]<br>• YCoCg 2:1 압축 및 핑퐁(Double Buffering) 메모리 제어[cite: 1, 2] | • 실시간 2x3 모자이크 영상 합성 및 12-bit 음계 검출 시스템 구현[cite: 1, 2] |
+| **[`Peripheral-Multiple-Control-System`](https://github.com/junbro0608/Peripheral-Multiple-Control-System)** | FPGA / Hardware | • Basys3(Artix-7) 활용 디지털 시계, 스톱워치, 센서 통합 제어[cite: 3]<br>• `AsciiSender` FSM, 동기식 원형 `TX_FIFO`, `TX_ARBITER` 설계[cite: 3] | • 물리 버튼 및 UART 인터페이스를 통한 페이로드 전송 및 우선순위 제어[cite: 3] |
+| **[`Monitor-drowsy-driving`](https://github.com/junbro0608/Monitor-drowsy-driving)** | On-Device AI | • Jetson Orin Nano 기반 로컬 LLM(Ollama) 및 STT/TTS 연동[cite: 4]<br>• YOLO Pose 머리 기울기 계산 및 눈 상태(EAR) 분석 로직 구현[cite: 4] | • 비전, 오디오, LLM 파이프라인 멀티프로세스 통합으로 실시간 졸음 감지 및 음성 경고 제공[cite: 4] |
+| **[`Braille-reading-and-voice-output-programs-for-the-visually-impaired`](https://github.com/junbro0608/Braille-reading-and-voice-output-programs-for-the-visually-impaired)** | Computer Vision | • YOLOv5 활용 시각장애인용 실시간 점자 인식 알고리즘 구현<br>• 인식된 텍스트를 오디오로 변환하는 TTS 음성 출력 시스템 적용 | • 딥러닝 기반 객체 인식을 실생활 보조기기 프로그램으로 확장 |
 
 ---
 
