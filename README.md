@@ -64,8 +64,7 @@
 ## 📫 Contact
 
 <div align="center">
-  <a href="mailto:[Your Email Here]"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="[Your LinkedIn Link Here]"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="mailto:[junyung0608@gmail.com]"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </div>
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&color=8a2be2&height=100&section=footer)
