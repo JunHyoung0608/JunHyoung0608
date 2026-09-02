@@ -34,6 +34,7 @@
 
 | 프로젝트명 | 분야 (Category) | 주요 기술 및 내용 | 핵심 성과 / 트러블슈팅 |
 | :--- | :--- | :--- | :--- |
+| **[저전력 CNN 가속기 기반 제스처 사진기](https://github.com/junbro0608/CNN-Gesture-Camera)** | SoC / AI Accelerator | • Zynq-7000 기반 경량 CNN 가속기(Verilog) 설계 및 Jetson 연동<br>• 비대칭형 Cache, 타일 재사용, 곱셈기 제거(Shift & Add) 최적화<br>• MediaPipe & LSTM 기반 손 제스처 추론 파이프라인 구축 | • 메모리 접근 50% 감소 및 저전력 상시 감지 구현<br>• Critical Path 데이터 경로 튜닝으로 Timing Closure (WNS +0.12ns, TNS 0ns) 달성<br>• 추론/영상 렌더링 멀티프로세싱 분리로 실시간 FPS 확보 |
 | **[AXI 주변장치 설계 및 UVM 검증](https://github.com/junbro0608/AXI-Based-Soc-Design-and-UVM-Verification)** | SoC / Verification | • MicroBlaze 기반 AXI4 Lite SPI/I2C Master 설계<br>• HW-HAL-Driver-Application SW 계층 구조 구축<br>• UVM 검증 환경(Driver, Monitor, Scoreboard) 구축 | • AXI 핸드셰이크 및 데이터 송수신 무결성 검증 (Error 0)<br>• 1-tick 'Done' 신호 폴링 누락 문제를 하드웨어 'Done Flag Logic' 추가로 해결 |
 | **[RISC-V MCU 기반 게임기](https://github.com/junbro0608/MCU_Up_Down_Game)** | SoC / MCU | • RISC-V (RV32I) 아키텍처 기반 MCU 시스템 구조 설계<br>• APB 버스 통합 및 R-type 최적화 데이터패스/컨트롤러 구현 | • 하드웨어 프로세서 설계를 통한 실시간 Up/Down 게임 로직 구동 |
 | **[FPGA 기반 비전 연주 시스템](https://github.com/junbro0608/VGA_CAM_Project)** | FPGA / Vision | • 6대 카메라 및 다중 FPGA(Basys3) 간 SPI/I2C 연동<br>• YCoCg 2:1 압축 및 핑퐁(Double Buffering) 메모리 제어 | • 모자이크 2X3 영상 합성 및 12-bit 음계 검출 시스템 구현 |
@@ -64,7 +65,7 @@
 ## 📫 Contact
 
 <div align="center">
-  <a href="mailto:[junyung0608@gmail.com]"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="mailto:junyung0608@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </div>
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&color=8a2be2&height=100&section=footer)
