@@ -2,7 +2,7 @@
 
 <div align="center">
 
-**시스템 반도체 엔지니어 | 하드웨어 설계 및 UVM 검증**
+**안녕하세요! 탄탄한 논리와 최적화로 문제를 해결하는 시스템 반도체 엔지니어 이준형입니다.**
 *RISC-V 아키텍처, FPGA 플로우, 그리고 최신 검증 방법론을 끊임없이 탐구합니다.*
 
 </div>
@@ -65,7 +65,7 @@
 ## 📫 Contact
 
 <div align="center">
-  <a href="mailto:junyung0608@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="mailto:junhyung0608@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </div>
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&color=8a2be2&height=100&section=footer)
